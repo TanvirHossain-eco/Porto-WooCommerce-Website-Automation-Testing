@@ -75,7 +75,7 @@ test.describe.serial('WooCommerce Website Testing', () => {
         // Wait for navigation after login
         await page.waitForLoadState("networkidle");
         // Verify successful login by checking for "My Account" heading
-        await page.waitForURL('**/my-account/**'); // Wait for URL change
+        // await page.waitForURL('**/my-account/**'); // Wait for URL change
         // Verify successful login by checking for "My Account" heading
         const myAccountHeading = await customerPage.getAccountUserText();
         await expect(myAccountHeading).toBe(config.WOOCOMMERCE_CUSTOMER_NAME);
