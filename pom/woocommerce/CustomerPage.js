@@ -25,6 +25,8 @@ class CustomerPage {
   // Get displayed account user text
   async getAccountUserText() {
     const myAccountHeading = await this.page.locator('.account-text-user').first();
+    // wait for the page locator to be visible
+    await expect(myAccountHeading).toBeVisible();
     return (await myAccountHeading.textContent()) || '';
   }
 
