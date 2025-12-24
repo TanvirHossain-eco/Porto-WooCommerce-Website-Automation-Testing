@@ -55,6 +55,8 @@ jobs:
           path: playwright-report/
           retention-days: 30 
 
+      # Activate The commented code to generate Test Summary and Upload Artifacts even if the tests fail
+
       # - name: Generate Test Summary
       #   if: always()
       #   run: |

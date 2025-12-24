@@ -86,11 +86,11 @@ module.exports = defineConfig({
       },
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    //   viewport: { width: 1200, height: 910 },  // Consistent resolution
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+      viewport: { width: 1200, height: 910 },  // Consistent resolution
+    },
 
     // {
     //   name: 'webkit',
