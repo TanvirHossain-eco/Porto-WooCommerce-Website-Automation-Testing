@@ -41,8 +41,7 @@ module.exports = defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
     headless: true,
-    // viewport: { width: 1280, height: 910 },  // Consistent resolution
-    // baseURL: 'http://automationexercise.com',
+    // viewport: { width: 1700, height: 840 },  // Consistent resolution
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     // launchOptions: {
@@ -77,6 +76,10 @@ module.exports = defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         viewport: { width: 1200, height: 910 },  // Consistent resolution
+        // viewport: null,
+        // launchOptions: {
+        //   args: ['--start-maximized'],
+        // },
         // // ✅ You can also add selector preferences per project
         // testIdAttribute: 'data-testid',
         

@@ -24,8 +24,19 @@ class CustomerPage {
 
   // Get displayed account user text
   async getAccountUserText() {
+    try {
+    // Add timeout and better error handling
     const myAccountHeading = await this.page.locator('.account-text-user').first();
-    return (await myAccountHeading.textContent()) || '';
+    
+    // Wait for element to be visible before getting text
+    await myAccountHeading.waitFor({ state: 'visible', timeout: 10000 });
+    
+    const text = await myAccountHeading.textContent();
+    return text || '';
+    } catch (error) {
+      console.error('Failed to get account user text:', error.message);
+      throw error;
+    }
   }
 
   // MINI-CART HELPERS
