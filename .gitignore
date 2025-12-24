@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+pom/flextable/
+
+# Environment Variables
+.env
+
+# README.md
+README.md
+
+# Playwright Manual Test File
+task1.spec.js
+example.spec.js
+task2.spec.js

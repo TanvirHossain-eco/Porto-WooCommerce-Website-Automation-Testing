@@ -1,0 +1,20 @@
+{
+  "name": "woocommerce-web-testing",
+  "version": "1.0.0",
+  "description": "WOOCOMMERCE WEB TESTING - Playwright Automation Project\r ==================================================\r Prerequisites:\r ==============\r IDE (VS Code)\r Git Bash Installation\r Node Js Installation\r After installation of Node JS open the command prompt \r check node & npm version\r To check Node version = node -v\r To check NPM version = npm -v",
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "dotenv": "^17.2.3"
+  }
+}
